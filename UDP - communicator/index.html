@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+
+article {
+    padding: 2em;
+    overflow: hidden;
+}
+
+</style>
+    <link rel="stylesheet" href="./css/photon.min.css" type="text/css">
+    <meta charset="UTF-8">
+    <title>SerpoUDP</title>
+</head>
+<body>
+
+
+
+
+    <div class "window-content" id='setUDP'>
+      <article>
+      <div class="form-group">
+         Chose IP address: &nbsp 
+        <input type="text" id="address" value="127.0.0.1"/>
+      </div>
+      
+      <div class="form-group">
+        Chose port number:
+        <input type="text" id="port" value="8084"/>
+      </div>
+
+       <button id="start" >START UDP </button>
+      </article>
+    </div>
+
+
+
+   <div class "window-content" id='setOPP'>
+     <article>
+         <p>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Send To </p>
+        <div class="form-group">
+         Chose IP address: &nbsp &nbsp 
+        <input type="text" id="addressmessage" value="127.0.0.1"/>
+      </div>
+       <div class="form-group">
+         Chose port number: &nbsp 
+        <input type="text" id="portmessage" value="8084"/>
+      </div>
+      <div class="form-group">
+        Chose fragment size:
+        <input type="number" id="fragmentsize" min="5" max="20" value="65492"/>
+      </div>
+      <div>
+      <button id="correct" >NEXT </button>
+      </div>
+</article>
+   </div>
+
+
+ <div class "window-content" id='setTYPE'>
+<article>
+      <div class="form-group">
+        Message:
+        <input type="text" id="message" value="Message"/>
+      </div>
+
+       <div class="form-group">
+        Chose File
+      <input type="file" id="files" multiple />
+       <output id="list"></output>
+      </div>
+      <div>
+        <input type="checkbox" id="Damaged" value="bad" />   Damaged Packet <br />
+      </div>
+</article>
+ </div>
+
+
+   <div class "window-content" id='setSEND'>
+     <article> 
+        <div class="form-group">
+        <button id="send" >SEND MESSAGE</button>
+      </div>
+</article>
+   </div>
+
+     <div class "window-content" id='setTEXT'>
+       <article>
+       <div class="form-group">
+      <textarea id="OutputField" name= "OutputField" rows="4" cols="50"></textarea>
+   </div>
+</article>
+   </div>
+
+
+      <script type="text/javascript" src="./listeners.js"></script>
+</body>
+</html>
+
+
